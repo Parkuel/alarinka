@@ -1,0 +1,57 @@
+.green {
+  color: white !important;
+  background-color: var(--color-primary) !important;
+}
+
+.green::after {
+  background-color: var(--color-primary) !important;
+}
+
+.cta {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.94rem 2.5rem;
+  display: inline-block;
+  border-radius: 6.25rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  -webkit-animation: moveInBottom 0.5s ease-out 0.75s;
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+  background-color: #fff;
+  color: var(--color-primary);
+}
+
+.cta:hover {
+  backface-visibility: hidden;
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+  -webkit-box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.2);
+}
+
+.cta:hover::after {
+  -webkit-transform: scaleX(1.4) scaleY(1.6);
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.cta::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-transition: all 0.4s;
+  background-color: #fff;
+  transition: all 0.4s;
+}

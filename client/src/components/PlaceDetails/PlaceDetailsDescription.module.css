@@ -1,0 +1,117 @@
+.container {
+  background-color: #fcfcfc;
+  margin-top: calc(0px - 9vw);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #777;
+}
+
+.container > * {
+  padding: 14vw 8vw 0;
+  padding-bottom: calc(1vw + 9vw);
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+}
+
+.descriptionText {
+  font-size: 1.0625rem;
+}
+
+.descriptionText:not(:last-child) {
+  margin-bottom: 1.25rem;
+}
+
+.overview {
+  background-color: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.overviewGroup:not(:last-child) {
+  margin-bottom: 2.375rem;
+}
+
+.overviewDetail {
+  font-size: 0.94rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 400;
+}
+
+.overviewDetail > svg {
+  margin-right: 0.625rem;
+}
+
+.overviewDetail > span {
+  font-size: 1.1rem;
+  line-height: none;
+  /* margin-right: 0.625rem; */
+}
+
+.overviewDetail:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.topic {
+  font-size: 1.41rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(rgba(26, 54, 93, 0.85)),
+    to(rgba(68, 92, 126, 0.85))
+  );
+  background-image: var(--linear-grad-dark);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 0.063rem;
+  line-height: 1.3;
+  display: inline-block;
+  margin-bottom: 2.19rem !important;
+}
+
+.topicMedium {
+  text-transform: capitalize !important;
+  font-size: 1.2rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.topicSmall {
+  text-transform: capitalize !important;
+  font-size: 1rem !important;
+  margin-bottom: 0.3rem !important;
+}
+
+.ctaContainer {
+  display: flex;
+  align-items: center;
+}
+
+.ctaContainer > *:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.price {
+  font-size: 2.5rem;
+  font-style: italic;
+  font-family: serif;
+  color: var(--color-primary);
+}
+
+.perkIcon:not(:last-child) {
+  margin-right: 0.625rem;
+}

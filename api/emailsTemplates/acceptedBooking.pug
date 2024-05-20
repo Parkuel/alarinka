@@ -1,0 +1,11 @@
+extends baseEmail 
+
+block content
+        H3 
+          | Your booking of 
+          b #{place.title},
+          | has been accepted.
+
+        //- ADD ADAPTED EMAIL CONTENTS USING HTML ELEMENTS e.g `p` like below
+        P Hello #{user.name} your booking of #{place.title} has been accepted.
+        p For more information about your bookings, contact owner (#{owner.name}) at #{owner.email} 

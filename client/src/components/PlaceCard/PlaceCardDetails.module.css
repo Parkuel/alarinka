@@ -1,0 +1,42 @@
+.details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 1.094rem;
+  grid-column-gap: 1.25rem;
+  padding: 1.56rem 1.88rem;
+}
+
+.description {
+  grid-column: 1 / -1;
+  font-size: 0.94rem;
+  font-style: italic;
+  margin-top: -0.625rem;
+  margin-bottom: 0.47rem;
+  max-height: 3rem;
+  min-height: 25px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: default;
+}
+
+.placeData {
+  font-size: 0.813rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.perks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1 / -1;
+}
+
+.perks > svg:not(:last-child) {
+  margin-right: 10%;
+}

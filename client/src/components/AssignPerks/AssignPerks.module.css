@@ -1,0 +1,7 @@
+.hasPerk {
+  fill: var(--color-primary);
+}
+
+.noPerk {
+  fill: var(--color-primary-light);
+}

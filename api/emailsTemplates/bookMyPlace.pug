@@ -1,0 +1,10 @@
+extends baseEmail 
+
+block content
+        H3 
+          | New Booking at 
+          b #{place.title},
+
+        //- ADD ADAPTED EMAIL CONTENTS USING HTML ELEMENTS e.g `p` like below
+        p Dear #{owner.name}
+        p There was a new booking of #{place.title} by #{user.name} 

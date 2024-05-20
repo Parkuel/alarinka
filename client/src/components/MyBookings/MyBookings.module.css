@@ -1,0 +1,27 @@
+.title {
+  position: relative;
+  font-size: 1.72rem;
+  z-index: 10;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 0 0 2.5rem 2rem;
+}
+
+.title span {
+  padding: 0.625rem 0.94rem;
+  line-height: 1;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  background-image: var(--linear-grad-dark);
+}
+
+.bookingContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.bookingContainer > div {
+  margin-bottom: 3rem;
+}

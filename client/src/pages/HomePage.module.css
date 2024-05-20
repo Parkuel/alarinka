@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+:root {
+  --color-primary: rgb(26 54 93 / 1);
+  --color-primary-light: rgb(226, 232, 240);
+  --linear-grad: linear-gradient(
+    to right bottom,
+    rgba(26, 54, 93, 0.5),
+    rgba(68, 92, 126, 0.1)
+  );
+  --linear-grad-dark: linear-gradient(
+    to bottom right,
+    rgba(68, 92, 126, 0.85),
+    rgba(26, 54, 93, 0.85)
+  );
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.title {
+  position: relative;
+  font-size: 1.72rem;
+  z-index: 10;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 0 0 3rem 2rem;
+}
+
+.title span {
+  position: absolute;
+  padding: 0.625rem 0.94rem;
+  line-height: 1;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  background-image: var(--linear-grad-dark);
+  transform: rotate(3deg);
+}
+
+.cardsContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
